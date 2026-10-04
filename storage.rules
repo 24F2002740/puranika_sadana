@@ -1,0 +1,11 @@
+rules_version = '2';
+
+// Firebase Storage rules for Puranika Sadana
+// Requires authentication for all read/write access.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

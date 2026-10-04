@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../l10n/app_localizations.dart';
+import 'package:puranika_sadana/l10n/app_localizations.dart';
 
 class PlaceholderPage extends StatelessWidget {
   const PlaceholderPage({super.key});
